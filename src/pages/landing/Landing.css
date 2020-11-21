@@ -1,0 +1,30 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #151c27;
+}
+h1 {
+    color: #ffff;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 1.8em;
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+.cards {
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+}
+.cards img {
+    width: 250px;
+    height: 250px;
+    margin-top: 50px;
+    margin-right: 18px;
+    border-radius: 230px;
+    border: 2px solid #3f51b5;
+    padding: 10px;
+}

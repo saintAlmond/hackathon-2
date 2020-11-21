@@ -1,9 +1,23 @@
+import React from 'react';
+import { BrowserRouter, Route, Switch  } from 'react-router-dom'
+import Landing from './pages/landing/Landing';
+import CovidCharts from './pages/covidCharts/CovidCharts';
+import { COVIDCHARTS } from './routes/routes';
+
 const  App = () => {
   return (
     <div>
-			<h1 style={{textAlign: "center"}}>
-				Nuclio FullStack Development Hackaton 2
-			</h1>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path='/'>
+            <Landing/>
+          </Route>
+          <Route exact path={COVIDCHARTS}>
+            <CovidCharts/>
+          </Route>
+        </Switch>
+      </BrowserRouter>
+		
     </div>
   );
 }
